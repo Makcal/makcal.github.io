@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About me</title>
+    <title>Maxim Fomin</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="/images/icons/watermelon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div style="width: 50px; height: 50px; background-color: red"></div>
+    <div id="main-block" class="page-block">
+        <div id="photo-part" class="block-part appear_anim" style="animation-delay: 0.5s">
+            <h1 id="name">Maxim Fomin</h1>
+            <img id="photo" src="/images/photo.jpg" alt="photo">
+        </div>
+        <div id="about-part" class="block-part appear_anim" style="animation-delay: 1s">
+            <h2 id="about-me-header">About me</h2>
+            <div id="about-me">
+                <p style="padding-bottom: 0">
+                    Hi! I'm a 1st year bachelor student of
+                    <a id="iu-link" class="no_underline hover_flying" href="https://innopolis.university/en/" target="_blank">
+                        <img id="iu-logo" src="/images/icons/iu.ico" alt="iu-logo">
+                        <span id="iu-name">Innopolis University</span>
+                    </a>.
+                </p>
+                <p style="padding-top: 0">
+                    I am mainly a Python backend developer but also know most common languages such as C, C++, Java, C#,
+                    JavaScript, SQL, etc. and have a bit of experience in frontend, robotics, DevOps, GameDev.
+                </p>
+                <p>
+                    My passion is learning and problem-solving, so I can easily adapt to new conditions.
+                    Secondly, I make a lot of efforts to help others.
+                    For example, I conduct lecture-like sessions and other activities to prepare people to
+                    tests and exams in the university.
+                </p>
+                <p>
+                    Fun fact: someone could call me a watermelon ambassador in the university!
+                </p>
+            </div>
+            <h3 id="contacts-header">Contacts</h3>
+            <div id="contacts">
+                <a class="no_underline" href="mailto:fominmaxim3721@gmail.com" target="_blank">
+                    <img class="contact-icon hover_flying" src="/images/icons/email-icon.png" alt="email">
+                </a>
+                <a class="no_underline" href="https://vk.com/maximf3" target="_blank">
+                    <img class="contact-icon hover_flying" src="/images/icons/vk-icon.png" alt="vk">
+                </a>
+                <a class="no_underline" href="https://t.me/chelekushka" target="_blank">
+                    <img class="contact-icon hover_flying" src="/images/icons/telegram-icon.png" alt="telegram">
+                </a>
+                <span style="font-size: 0.8em">(Telegram is preferred)</span>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div id="project-block" class="page-block">
+        <div id="project-list-part" class="block-part appear_anim">
+            <h3 id="project-list-header">
+                <a id="gh-link" class="no_underline" href="https://github.com/Makcal" target="_blank">
+                    <img id="github-logo" class="hover_flying" src="/images/icons/github-icon.svg" alt="github">
+                </a>
+                List of projects:
+            </h3>
+            <ol id="project-list">
+                <li>
+                    <a href="https://github.com/Makcal/Gigatester" target="_blank">Gigatester</a>
+                    <ul>
+                        <li>
+                            Created for my classmates this local system allows finding mistakes in your code for
+                            Codeforces and similar educational tasks via running the program on random tests.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    InNoHassle-Rooms [WIP]:
+                    <a href="https://github.com/one-zero-eight/InNoHassle-Rooms" target="_blank">API</a> +
+                    <a href="https://github.com/one-zero-eight/InNoHassle-RoomsBot" target="_blank">Bot</a>
+                    <ul>
+                        <li>
+                            InNoHassle-Rooms is a part of InNoHassle ecosystem that helps students with cohabitation.
+                            It provides tools for setting up and monitoring shared duties and room rules.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://github.com/Makcal/CppToPlantUML" target="_blank">C++ to PlantUML</a>
+                    <ul>
+                        <li>
+                            A Python script for parsing C++ code and generating a rough UML class diagram.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="top-project-part" class="block-part appear_anim">
+            <h2 id="top-project-header">The best project</h2>
+            <img id="top-project-demo" src="/images/tester_demo.gif" alt="tester demo">
+            <a id="top-project-caption" href="http://84.235.249.242/" target="_blank">
+                Visit gigatester
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
