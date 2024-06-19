@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Maxim Fomin</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <link rel="icon" href="/images/icons/watermelon.png">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
@@ -105,6 +105,15 @@
             </a>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="sep"></div>
+    <div id="comic-block" class="page-block">
+        <div id="comic-part" class="block-part appear_anim">
+            <p>Wanna read a comic? Press da button!</p>
+            <form action="/comic.html">
+                <input id="comic-button" type="submit" value="See a comic">
+            </form>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
