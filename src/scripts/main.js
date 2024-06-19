@@ -1,4 +1,5 @@
-const animated_parts = ["#photo-part", "#about-part", "#project-list-part", "#top-project-part"];
+// const animated_parts = ["#photo-part", "#about-part", "#project-list-part", "#top-project-part"];
+const animated_parts = [...document.querySelectorAll(".appear_anim")].map(e => '#' + e.id);
 const delay_step = 0.5;
 const animation_duration = 1;
 
