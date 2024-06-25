@@ -19,7 +19,7 @@ export default {
         typescript(),
         copy({
             targets: [
-                {src: 'src', dest: 'build'},
+                {src: 'src', dest: 'build', expandDirectories: true},
             ],
             filter: src => !src.match(/.*\.(js|jsx|ts|tsx)/),
             flatten: false,
