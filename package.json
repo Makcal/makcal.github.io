@@ -12,7 +12,8 @@
     "rollup-plugin-copy": "^3.5.0"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js",
+    "zip": "zip -r MaximFomin.zip src package.json rollup.config.js tsconfig.json"
   },
   "type": "module"
 }
