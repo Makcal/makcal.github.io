@@ -11,7 +11,7 @@ export default {
         'src/scripts/comic.ts',
     ],
     output: {
-        dir: 'build/scripts',
+        dir: 'dist/scripts',
     },
     plugins: [
         nodeResolve({browser: true}),
@@ -19,7 +19,7 @@ export default {
         typescript(),
         copy({
             targets: [
-                {src: 'src', dest: 'build', expandDirectories: true},
+                {src: 'src', dest: 'dist', expandDirectories: true},
             ],
             filter: src => !src.match(/.*\.(js|jsx|ts|tsx)/),
             flatten: false,
