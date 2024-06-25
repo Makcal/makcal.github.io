@@ -1,11 +1,11 @@
-const GET_COMIC_ID_URL = "https://fwd.innopolis.university/api/hw2"
-const GET_COMIC_URL = "https://fwd.innopolis.university/api/comic"
-const EMAIL = "m.fomin@innopolis.university"
+import settings from "./settings.js";
 
 
 async function loadComic() {
     let comicId = await fetch(
-        GET_COMIC_ID_URL + '?' + new URLSearchParams({email: EMAIL}).toString()
+        settings.comic_api.GET_COMIC_ID_URL
+        + '?'
+        + new URLSearchParams({email: settings.comic_api.EMAIL}).toString()
     ).then(
         r => r.text()
     ).then(
@@ -13,7 +13,7 @@ async function loadComic() {
     );
 
     let data = await fetch(
-        GET_COMIC_URL + '?' + new URLSearchParams({id: comicId.toString()}).toString()
+        settings.comic_api.GET_COMIC_URL + '?' + new URLSearchParams({id: comicId.toString()}).toString()
     ).then(
         r => r.json()
     );
