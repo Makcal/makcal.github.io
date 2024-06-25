@@ -120,6 +120,7 @@ fabric.properties
 # NodeJS
 node_modules/
 build/
+dist/
 
 
 # Custom
