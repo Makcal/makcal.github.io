@@ -1,8 +1,8 @@
 import {Comic} from "../domain/comic";
 
 
-interface IComicApi {
+interface IComicService {
     getComic: () => Promise<Comic>;
 }
 
-export {IComicApi}
+export {IComicService}

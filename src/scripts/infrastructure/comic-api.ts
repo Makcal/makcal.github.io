@@ -1,4 +1,4 @@
-import {IComicApi} from "../application/comic";
+import {IComicService} from "../application/comic-service";
 import {Comic} from "../domain/comic";
 import {consts} from "../settings/comic-consts";
 
@@ -16,7 +16,7 @@ interface ComicData {
 }
 
 
-class ComicFetcher implements IComicApi {
+class ComicFetcher implements IComicService {
     private readonly apiConsts = consts;
 
     async getComicId(): Promise<number> {

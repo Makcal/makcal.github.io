@@ -1,9 +1,9 @@
-import {IComicApi} from "./application/comic";
+import {IComicService} from "./application/comic-service";
 import {ComicFetcher} from "./infrastructure/comic-api";
 import {formatDistanceToNow} from "date-fns";
 
 
-async function loadComic(comicApi: IComicApi): Promise<void> {
+async function loadComic(comicApi: IComicService): Promise<void> {
     let comic = await comicApi.getComic();
 
     const imageElement = document.createElement("img");
