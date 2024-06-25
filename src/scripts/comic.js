@@ -1,4 +1,4 @@
-import settings from "./settings.js";
+import settings from "./settings";
 
 
 async function loadComic() {
@@ -40,4 +40,4 @@ async function loadComic() {
     document.getElementById("header-block").appendChild(publishDateElement);
 }
 
-loadComic().then();
+window.onload = async () => { await loadComic(); }
