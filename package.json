@@ -7,15 +7,26 @@
     "rollup": "^4.18.0",
     "rollup-plugin-copy": "^3.5.0",
     "tslib": "^2.6.3",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^4.2.18",
+    "svelte-check": "^3.8.1",
+    "vite": "^5.3.1"
+
   },
   "dependencies": {
     "date-fns": "^3.6.0"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js",
-    "minify": "echo html css | xargs -n1 echo | xargs -i html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true --file-ext {} --input-dir dist --output-dir dist",
-    "zip": "zip -r MaximFomin.zip src package.json rollup.config.js tsconfig.json"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+
+    "lint": "echo NOT IMPLEMENTED",
+    "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
+
+    "minify": "echo html css | xargs -n1 echo | xargs -i html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true --file-ext {} --input-dir dist --output-dir dist"
   },
   "type": "module"
 }
