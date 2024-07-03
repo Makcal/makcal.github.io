@@ -6,11 +6,13 @@ export default defineConfig({
   plugins: [
       svelte(),
   ],
+  publicDir: 'static',
   build: {
     rollupOptions: {
       input: {
-        main: 'src/index.html',
-      }
+        main: 'src/main.html',
+        comic: 'src/comic.html',
+      },
     }
   }
 })

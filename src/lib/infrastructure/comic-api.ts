@@ -1,5 +1,5 @@
-import {IComicService} from "../application/comic-service";
-import {Comic} from "../domain/comic";
+import type {IComicService} from "../application/comic-service";
+import type {Comic} from "../domain/comic";
 import {consts} from "../settings/comic-consts";
 
 
