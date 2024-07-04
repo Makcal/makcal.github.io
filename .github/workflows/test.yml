@@ -1,7 +1,7 @@
 name: Test and lint
 
 on:
-  pull_request:
+  push:
 
 jobs:
   test:
