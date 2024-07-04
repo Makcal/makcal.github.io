@@ -1,8 +1,7 @@
-import type {Comic} from "../domain/comic";
-
+import type { Comic } from "../domain/comic";
 
 interface IComicService {
     getComic: () => Promise<Comic>;
 }
 
-export type {IComicService}
+export type { IComicService };

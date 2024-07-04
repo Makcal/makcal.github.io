@@ -1,7 +1,7 @@
-import Comic from './ComicPage.svelte'
+import Comic from "./ComicPage.svelte";
 
 const page = new Comic({
-  target: document.getElementById('comic-page')!,
-})
+    target: document.getElementById("comic-page")!,
+});
 
-export default page
+export default page;

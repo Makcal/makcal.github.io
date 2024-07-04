@@ -5,4 +5,4 @@ interface Comic {
     publishDate: Date;
 }
 
-export type {Comic};
+export type { Comic };
