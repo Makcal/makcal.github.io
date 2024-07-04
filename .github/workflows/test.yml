@@ -1,0 +1,20 @@
+name: Test and lint
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22.x"
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run check

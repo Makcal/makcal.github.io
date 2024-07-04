@@ -1,9 +1,13 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy GitHub Pages
 
 on:
-  # Runs on pushes
-  push:
+  # Runs on pushes targeting the default branch
+  workflow_run:
+    workflows: ['Test and lint']
+    types: [completed]
+    branches:
+      - 'main'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,25 +25,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "22.x"
-          cache: "npm"
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run check
-
   deploy:
     runs-on: ubuntu-latest
-    needs: test
-    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
