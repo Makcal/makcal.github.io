@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'src/main.html',
+        main: 'src/index.html',
         comic: 'src/comic.html',
       },
     }

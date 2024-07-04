@@ -1,4 +1,4 @@
-<a href="/main.html">
+<a href="/index.html">
     <img id="home-button" src='/images/icons/home.svg' alt="home button">
 </a>
 
