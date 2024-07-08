@@ -5,4 +5,4 @@ interface IComicService {
     getComic: () => Promise<Comic>;
 }
 
-export {IComicService}
+export type {IComicService}

@@ -10,4 +10,6 @@ const consts: ComicApiConsts = {
     COMIC_URL: new URL("https://fwd.innopolis.university/api/comic"),
 }
 
-export {ComicApiConsts, consts}
+export { consts };
+export type { ComicApiConsts };
+
