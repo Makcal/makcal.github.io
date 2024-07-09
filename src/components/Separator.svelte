@@ -1,9 +1,0 @@
-<div class="sep"></div>
-
-<style>
-    .sep {
-        width: 100%;
-        height: 2px;
-        background-image: linear-gradient(0deg, #00000055, #000000 50%, #00000055);
-    }
-</style>
