@@ -1,6 +1,6 @@
 import Link from "next/link";
 import classes from "@/app/page.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export default function ContactIcon({
     id,
@@ -11,7 +11,7 @@ export default function ContactIcon({
 }: {
     id: string;
     href: string;
-    imageSrc: string;
+    imageSrc: string | StaticImageData;
     imageAlt?: string;
     extraImgClasses?: string;
 }) {

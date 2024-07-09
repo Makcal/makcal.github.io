@@ -38,7 +38,13 @@ export default async function ComicPage() {
             <PageBlock styles={{ backgroundColor: "#6ca3cc" }}>
                 <BlockPart flexBasis="100%">
                     <div className={`${classes.imagePart} ${classes.blockPart}`}>
-                        <Image className={classes.comicImage} alt={comic.alt} src={comic.imgUrl.toString()} />
+                        <Image
+                            className={classes.comicImage}
+                            alt={comic.alt}
+                            src={comic.imgUrl.toString()}
+                            width={1}
+                            height={1}
+                        />
                     </div>
                 </BlockPart>
             </PageBlock>
