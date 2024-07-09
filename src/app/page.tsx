@@ -17,6 +17,7 @@ import testerDemo from "../../public/images/tester_demo.gif";
 
 export const metadata: Metadata = {
     title: "Portfolio",
+    description: "A portfolio page with info about me",
 };
 
 export default function PortfolioPage() {

@@ -9,6 +9,7 @@ import { ComicFetcher } from "@/app/(scripts)/infrastructure/comic-api";
 
 export const metadata: Metadata = {
     title: "Comic",
+    description: "A comic from the 2nd homework",
 };
 
 const comicApi: IComicService = new ComicFetcher();
