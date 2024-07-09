@@ -1,0 +1,52 @@
+.blockPart {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.headingPageTitle {
+    margin-top: 2px;
+    font-size: 4em;
+    font-weight: 400;
+    text-shadow: 0 0 2px white;
+}
+
+@font-face {
+    font-family: "Ldfcomicsans";
+    src: url("/fonts/Ldfcomicsans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.headerSpan {
+    font-family: "Ldfcomicsans", sans-serif;
+    text-decoration: underline dotted;
+}
+
+.comicInfo {
+    font-weight: normal;
+}
+
+.comicImage {
+    border: #b4f4e2 solid 0.3em;
+    border-radius: 1em;
+    width: 100%;
+    max-width: 50em;
+}
+
+.imagePart {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .headerBlock {
+        padding-top: 3em;
+    }
+
+    .pageBlock {
+        font-size: 3em;
+    }
+}

@@ -1,19 +1,26 @@
 {
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "html-minifier-terser": "^7.2.0",
-    "rollup": "^4.18.0",
-    "rollup-plugin-copy": "^3.5.0",
     "tslib": "^2.6.3",
-    "typescript": "^5.5.2"
+    "typescript": "5.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2",
+    "eslint-config-next": "14.2.4"
   },
   "dependencies": {
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.4"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint && prettier --check src",
+    "check": "tsc -p tsconfig.json",
     "minify": "echo html css | xargs -n1 echo | xargs -i html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true --file-ext {} --input-dir dist --output-dir dist",
     "zip": "zip -r MaximFomin.zip src package.json rollup.config.js tsconfig.json"
   },

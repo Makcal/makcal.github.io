@@ -1,0 +1,26 @@
+.projectListHeader {
+    font-size: 2em;
+}
+
+.projectList {
+    padding: 1em 0;
+}
+
+.projectItem {
+    font-size: 1.3rem;
+    padding: 0.5em 0;
+}
+
+.projectItem a {
+    text-decoration: underline;
+}
+
+.projectDescription {
+    margin-left: 1em;
+}
+
+.githubLogo {
+    height: 1em;
+    margin: 0 0.1em;
+    user-select: none;
+}

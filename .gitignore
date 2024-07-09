@@ -122,8 +122,15 @@ node_modules/
 build/
 dist/
 
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Next.js
+.next
 
 # Custom
 .idea/
 mywebpy/
 MaximFomin.zip
+tsconfig.tsbuildinfo
