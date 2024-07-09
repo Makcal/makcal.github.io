@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    height: 3rem;
+    padding: 0.4em 1em;
+    background-color: #bacddc;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.pageLink {
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+}
+
+.pageLink a {
+    color: #383a3c;
+}
+
+.currentLink {
+    font-weight: bold;
+}

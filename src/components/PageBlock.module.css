@@ -1,0 +1,11 @@
+.pageBlock {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .pageBlock {
+        flex-direction: column;
+    }
+}

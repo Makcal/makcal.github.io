@@ -41,14 +41,14 @@ jobs:
           node-version: "22.x"
           cache: "npm"
       - run: npm ci
+      - run: npm run lint
       - run: npm run build
-      - run: npm run minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './dist'
+          path: './out'
 
       - name: Deploy to GitHub Pages
         id: deployment
