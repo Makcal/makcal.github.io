@@ -13,6 +13,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: fit-content;
+    height: fit-content;
+}
+
 @font-face {
     font-family: "Play";
     src: url("/fonts/Play.woff2") format("woff");

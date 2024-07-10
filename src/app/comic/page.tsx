@@ -9,6 +9,7 @@ import { ComicFetcher } from "@/app/(scripts)/infrastructure/comic-api";
 
 export const metadata: Metadata = {
     title: "Comic",
+    description: "A comic from the 2nd homework",
 };
 
 const comicApi: IComicService = new ComicFetcher();
@@ -38,7 +39,13 @@ export default async function ComicPage() {
             <PageBlock styles={{ backgroundColor: "#6ca3cc" }}>
                 <BlockPart flexBasis="100%">
                     <div className={`${classes.imagePart} ${classes.blockPart}`}>
-                        <Image className={classes.comicImage} alt={comic.alt} src={comic.imgUrl.toString()} />
+                        <Image
+                            className={classes.comicImage}
+                            alt={comic.alt}
+                            src={comic.imgUrl.toString()}
+                            width={10000}
+                            height={10000}
+                        />
                     </div>
                 </BlockPart>
             </PageBlock>

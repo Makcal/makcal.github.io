@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     icons: {
         icon: "/images/icons/watermelon.png",
     },
+    authors: { name: "Maxim Fomin", url: "https://makcal.github.io" },
 };
 
 export default function RootLayout({

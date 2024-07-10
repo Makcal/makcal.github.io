@@ -27,6 +27,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      STATIC_BUILD: 1
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

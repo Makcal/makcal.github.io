@@ -8,9 +8,16 @@ import ContactIcon from "@/components/index/ContactIcon";
 import AppearAnimation from "@/components/AppearAnimation";
 import ProjectList from "@/components/index/ProjectList";
 import Image from "next/image";
+import myPhoto from "../../public/images/photo.jpg";
+import iuIcon from "../../public/images/icons/iu.ico";
+import tgIcon from "../../public/images/icons/telegram-icon.png";
+import emailIcon from "../../public/images/icons/email-icon.png";
+import vkIcon from "../../public/images/icons/vk-icon.png";
+import testerDemo from "../../public/images/tester_demo.gif";
 
 export const metadata: Metadata = {
     title: "Portfolio",
+    description: "A portfolio page with info about me",
 };
 
 export default function PortfolioPage() {
@@ -20,7 +27,7 @@ export default function PortfolioPage() {
                 <BlockPart flexBasis={"40%"}>
                     <div className={`${classes.blockPart} ${classes.photoPart} ${classes.appearAnim}`}>
                         <h1 className={`${classes.name}`}>Maxim Fomin</h1>
-                        <Image className={classes.photo} src="/images/photo.jpg" alt="photo" />
+                        <Image className={classes.photo} src={myPhoto} alt="photo" />
                     </div>
                 </BlockPart>
                 <BlockPart flexBasis={"60%"}>
@@ -35,7 +42,7 @@ export default function PortfolioPage() {
                                     href="https://innopolis.university/en/"
                                     target="_blank"
                                 >
-                                    <Image className={classes.iuLogo} src="/images/icons/iu.ico" alt="iu-logo" />
+                                    <Image className={classes.iuLogo} src={iuIcon} alt="iu-logo" />
                                     <span className={classes.iuName}>Innopolis University</span>
                                 </Link>
                             </p>
@@ -55,21 +62,12 @@ export default function PortfolioPage() {
                         </div>
                         <h3 className={`${classes.contactsHeading} ${classes.heading}`}>Contacts</h3>
                         <div className={classes.contacts}>
-                            <ContactIcon
-                                id="email"
-                                href="mailto:fominmaxim3721@gmail.com"
-                                imageSrc="/images/icons/email-icon.png"
-                            />
-                            <ContactIcon
-                                id="vk-link"
-                                href="https://vk.com/maximf3"
-                                imageSrc="/images/icons/vk-icon.png"
-                                imageAlt="vk"
-                            />
+                            <ContactIcon id="email" href="mailto:fominmaxim3721@gmail.com" imageSrc={emailIcon} />
+                            <ContactIcon id="vk-link" href="https://vk.com/maximf3" imageSrc={vkIcon} imageAlt="vk" />
                             <ContactIcon
                                 id="tg-link"
                                 href="https://t.me/chelekushka"
-                                imageSrc="/images/icons/telegram-icon.png"
+                                imageSrc={tgIcon}
                                 imageAlt="telegram"
                             />
                             <span style={{ fontSize: "0.8em" }}>(Telegram is preferred)</span>
@@ -87,7 +85,12 @@ export default function PortfolioPage() {
                 <BlockPart>
                     <div className={`${classes.blockPart} ${classes.appearAnim}`}>
                         <h3 className={`${classes.topProjectHeading} ${classes.heading}`}>The best project</h3>
-                        <Image className={classes.topProjectDemo} src="/images/tester_demo.gif" alt="tester demo" />
+                        <Image
+                            className={classes.topProjectDemo}
+                            src={testerDemo}
+                            alt="tester demo"
+                            unoptimized={true}
+                        />
                         <Link className={classes.topProjectCaption} href="http://84.235.249.242/" target="_blank">
                             {"Visit gigatester"}
                         </Link>
