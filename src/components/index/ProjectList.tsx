@@ -2,6 +2,7 @@ import classes from "./ProjectList.module.css";
 import ContactIcon from "@/components/index/ContactIcon";
 import ProjectItem from "@/components/index/ProjectItem";
 import React from "react";
+import ghIcon from "../../../public/images/icons/github-icon.svg";
 
 const projects = {
     gigatester: {
@@ -31,7 +32,7 @@ export default function ProjectList() {
                     id="gh-link"
                     href="https://github.com/Makcal"
                     imageAlt="github"
-                    imageSrc={"/images/icons/github-icon.svg"}
+                    imageSrc={ghIcon}
                     extraImgClasses={classes.githubLogo}
                 />
                 List of projects:

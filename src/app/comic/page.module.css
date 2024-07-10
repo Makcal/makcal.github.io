@@ -33,7 +33,7 @@
 .comicImage {
     border: #b4f4e2 solid 0.3em;
     border-radius: 1em;
-    width: 100%;
+    position: relative;
     max-width: 50em;
 }
 
