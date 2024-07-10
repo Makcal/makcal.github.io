@@ -43,8 +43,8 @@ export default async function ComicPage() {
                             className={classes.comicImage}
                             alt={comic.alt}
                             src={comic.imgUrl.toString()}
-                            width={1}
-                            height={1}
+                            width={10000}
+                            height={10000}
                         />
                     </div>
                 </BlockPart>

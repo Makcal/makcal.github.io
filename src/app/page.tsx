@@ -85,7 +85,12 @@ export default function PortfolioPage() {
                 <BlockPart>
                     <div className={`${classes.blockPart} ${classes.appearAnim}`}>
                         <h3 className={`${classes.topProjectHeading} ${classes.heading}`}>The best project</h3>
-                        <Image className={classes.topProjectDemo} src={testerDemo} alt="tester demo" />
+                        <Image
+                            className={classes.topProjectDemo}
+                            src={testerDemo}
+                            alt="tester demo"
+                            unoptimized={true}
+                        />
                         <Link className={classes.topProjectCaption} href="http://84.235.249.242/" target="_blank">
                             {"Visit gigatester"}
                         </Link>
